@@ -1,0 +1,106 @@
+pragma solidity 0.6.10;
+contract CoronaMeter{
+    
+    ///Create address variables for HeadAdmin, Admins, and Hospital.
+    address public Admin;
+    ///address[] public Hospital;    ///Array of all Hospitals.
+
+    ///All details of Date and Time use this structure.
+    struct DateTime {
+        uint Date;
+        uint Month;
+    }
+    
+    ///All the Patients will use this structure.
+    struct Patient {
+        uint PatientID;
+        uint Age;
+        DateTime Clock;
+        string Outcome;
+    }
+    
+    ///Maps File number to PAtient details.
+    mapping (uint => Patient) File;
+    
+    /// Initialise count of patients.
+    uint pCount;
+    uint dCount;
+    
+    ///Using this to easily create three category of powers.
+    enum Power {Head, Hosp, NotRegistered}
+    Power public power = Power.NotRegistered;
+    
+    ///trick
+    mapping (address => bool) MarkHospital;
+    
+    ///This code runs only once in the lifetime and will assign the single HeadAdmin.
+    constructor() public {
+        Admin = msg.sender;
+        pCount = 0;
+        dCount = 0;
+    }
+    
+    /// This will decide what power you are assuming by checking your address.
+    function PowerDecider() public returns(string memory){
+        ///address ToCheck = msg.sender;
+        if(msg.sender == Admin){
+            power = Power.Head;
+            return("You are Admin");
+        }
+        if(MarkHospital[msg.sender]){
+            power = Power.Hosp;
+            return("Registered as Hospital");
+        }
+        else{
+            power = Power.NotRegistered;
+            return("You don't have any permission");
+        }
+    }
+    
+    /// (only) HeadAdmin and Admins use this function to register new Hospitals.
+    function RegisterHospital(address HospitalID) public {
+        require(msg.sender == Admin, "Only Admin can register");
+        MarkHospital[HospitalID] = true;
+    }
+    
+    ///It will register patient, take data from admin/hospital, and add to counting.
+    function RegisterPatient(uint _PatientID, uint _Age, uint _Date, uint _Month, string memory _Outcome) public {
+        require(power == Power.Head || power == Power.Hosp);
+        
+        Patient memory patient;
+        patient.PatientID = _PatientID;
+        patient.Age = _Age;
+        patient.Clock.Date = _Date;
+        patient.Clock.Month = _Month;
+        patient.Outcome = _Outcome;
+        
+        File[_PatientID] = patient;
+        
+        if(keccak256(bytes(_Outcome)) == keccak256(bytes("Positive"))){
+            pCount++;
+        }
+        
+        if(keccak256(bytes(_Outcome)) == keccak256(bytes("Dead"))){
+            dCount++;
+        }
+    }
+    
+    ///Needs to return/show the data.
+    function Data (uint ID) public view returns (uint Patient_ID, uint Patient_Age, uint Patient_Date, uint Patient_Month, string memory Patient_Outcome) 
+    {
+        Patient memory patient = File[ID];
+        
+        Patient_ID = patient.PatientID;
+        Patient_Age = patient.Age;
+        Patient_Date = patient.Clock.Date;
+        Patient_Month = patient.Clock.Month;
+        Patient_Outcome = patient.Outcome;
+        
+        return (Patient_ID, Patient_Age, Patient_Date, Patient_Month, Patient_Outcome);
+    }    
+    
+    function Counting() view public returns (uint positive, uint deceased) 
+    {
+        return (pCount, dCount);
+    }
+}
