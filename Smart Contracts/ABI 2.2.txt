@@ -1,0 +1,149 @@
+[
+	{
+		"inputs": [],
+		"name": "PowerDecider",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "HospitalID",
+				"type": "address"
+			}
+		],
+		"name": "RegisterHospital",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_PatientID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_Age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_Date",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_Month",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_Outcome",
+				"type": "string"
+			}
+		],
+		"name": "RegisterPatient",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "Admin",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "Counting",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "positive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "deceased",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "ID",
+				"type": "uint256"
+			}
+		],
+		"name": "Data",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "Patient_ID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "Patient_Age",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "Patient_Date",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "Patient_Month",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "Patient_Outcome",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "power",
+		"outputs": [
+			{
+				"internalType": "enum CoronaMeter.Power",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
