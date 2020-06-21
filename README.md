@@ -37,6 +37,23 @@ This is a very simple website built on top of etherum technology and utilises th
 
 And as we all know the biggest plus point of ethereum based database management is its immutability and the fact that everything gets stored on the chain permanently. Therefore, we'll know who entered a data in CoronaMeter.
 
+# What makes it awesome -
+
+1. Can be implemented on the pre-existing infrastructure
+
+2. Zero/very low cost of implementation
+
+3. Time required to get it up and running is low because the easy distribution
+
+4. Bringing transparency and credibility in the data about the number of positive cases and death cases in the ongoing pandemic.
+
+5. Increase the trust of the public on the pandemic data and government which should ultimately lead to more cooperation.
+
+6. Save the government a lot of money as there is no need for middlemen to handle the data or Verification agencies to verify the data. Everything will be done by the Smart Contract!
+
+7. In the current situation, the data might get corrupted or tampered with as there are so many people handling it. It also reduces accountability. Our App will prevent this from happening as nobody except the Hospitals will touch the input data.
+
+8. In the use of private servers, if something happens to the servers like the server goes down or gets destroyed, the data simply becomes either inaccessible or lost!. When kept on Ethereum blockchain or IPFS (a similar but cheaper technology) it is stored on nearly 10,000 nodes all around the world. You’ll need to destroy all the 10,000 nodes to actually be able to make data inaccessible.
 
 # How it does these things?
 
@@ -63,3 +80,9 @@ The Smart Contract is hosted on both Ropsten test network and Matic test network
 We needed to make sure that only Admin and registered Hospitals will be able to register new patients, so our earlier idea was to iterate through an array of registered hospitals and find if the address is present. This would have become very costly for practical purposes as Ethereum charges you for every step you take (and imagine the steps in going through the array of thousands of hospitals every time). 
 
 We found an efficient alternative as connecting a new Hospital address with a Boolean and marking it as true with the help of "Mapping function". So whenever someone tries to add a new patient we just need to check if their address has been mapped as true; if not then the person gets a message that they are not authorized to do so. We also had the difficulty in connecting the blockchain into flutter and posting and getting location in very less time interval was one of the biggest challenges we faced.
+
+# What's next? 
+
+1. We plan to be able to host the complete data on IPFS as it will make it more affordable and open to the society new options to store the data for any disease in general like Swine FLu or Ebola.
+
+2. We can also release the Socialist Guru app to public as an addition to the Arogya Setu app released in India. It will help individuals to take note of the places they are going to.
