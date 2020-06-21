@@ -11,4 +11,20 @@ Similarly, Doctors are working day and night, risking their lives to treat Covid
 
 We wanted tackle this problem by building a system that was based on a decentralised system. How better than using Etherum blochain and Matic for this purpose! Efficient, decentralised, and immutable!
 
+# What it does?
+
+**The Socialist Guru* -
+
+It is a simple and small application resting in your smart phone and only requires a GPS and Mobile data access to work. It runs with abilities : 
+
+1. It keeps running in the background and keeps detecting the number of people in your safe distance radius. As long as the number of people are within a safe number, you can rest relax and the app interface will stay green :) But as long as this number gets above a safe maximum, it will notify you and the interface will turn red until the situation improves.
+
+2. One can also check for the same situation in any specific location they want to! Just enter the location or pin it on the map and the live data will tell you if the place safe to go or not. This will be especially useful for police and other authorities who are trying to keep a check on social distance in their premises. 
+
+**CoronaMeter* - 
+
+This is a very simple website built on top of etherum technology and utilises the power of Matic network to improve its capacities and affordability drastically. 
+
+![Web interface](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/Web%20interface.png)
+
 Go check out our CoronaMeter Pandemic Data management system on https://oneclickdapp.com/golf-jeep/.
