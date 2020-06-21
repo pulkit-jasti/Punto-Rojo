@@ -3,6 +3,8 @@ Repo for the HackJaipur hackathon project
 
 Go check out our CoronaMeter Pandemic Data management system on https://oneclickdapp.com/golf-jeep/ today!
 
+Check out our awesome app by installing it from this link https://drive.google.com/file/d/1nEx5gwVYNvJPHn8TRr0o43zduGh7fB9k/view?usp=sharing.
+
 # Inspiration :
 
 Two pillars of Community Helpers stand strong in controlling the expansion of this heart-wrenching Pandemic: Police and Hospitals. 
