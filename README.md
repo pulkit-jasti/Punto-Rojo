@@ -1,7 +1,7 @@
 # HackJaipur
 Repo for the HackJaipur hackathon project
 
-#Inspiration :
+# Inspiration :
 
 Two pillars of Community Helpers stand strong in controlling the expansion of this heart wrenching Pandemic : Police and Hospitals. 
 
