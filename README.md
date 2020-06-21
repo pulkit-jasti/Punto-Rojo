@@ -1,6 +1,8 @@
 # HackJaipur
 Repo for the HackJaipur hackathon project
 
+Go check out our CoronaMeter Pandemic Data management system on https://oneclickdapp.com/golf-jeep/ today!
+
 # Inspiration :
 
 Two pillars of Community Helpers stand strong in controlling the expansion of this heart wrenching Pandemic : Police and Hospitals. 
@@ -13,7 +15,7 @@ We wanted tackle this problem by building a system that was based on a decentral
 
 # What it does?
 
-**The Socialist Guru* -
+**The Socialist Guru** -
 
 It is a simple and small application resting in your smart phone and only requires a GPS and Mobile data access to work. It runs with abilities : 
 
@@ -21,10 +23,43 @@ It is a simple and small application resting in your smart phone and only requir
 
 2. One can also check for the same situation in any specific location they want to! Just enter the location or pin it on the map and the live data will tell you if the place safe to go or not. This will be especially useful for police and other authorities who are trying to keep a check on social distance in their premises. 
 
-**CoronaMeter* - 
+**CoronaMeter** - 
 
 This is a very simple website built on top of etherum technology and utilises the power of Matic network to improve its capacities and affordability drastically. 
 
 ![Web interface](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/Web%20interface.png)
 
-Go check out our CoronaMeter Pandemic Data management system on https://oneclickdapp.com/golf-jeep/.
+👆 Anybody with an Ethereum address can read the data on the web from knowing who the admin is to the individual details of the patients (without directly linking information, of course) like Age and Date of information. This will ensure that there is complete tranparancy in the untampered data that every citizen has the right to know.
+
+![Web interface 2](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/web%20interface%202.png)
+
+👆 Coming to the data entry part, there is a top level admin that has the maximum powers from registering with new Hospitals to Registering new Patients. These Hospitals only have the power to add new patient details. If the need be, the smart contract could also be modified to have vice admins who have powers in between the Admin and Hospitals. Sounds like your typical Discord group, doesn't it?
+
+And as we all know the biggest plus point of ethereum based database management is its immutability and the fact that everything gets stored on the chain permanently. Therefore, we'll know who entered a data in CoronaMeter.
+
+
+# How it does these things?
+
+**Hardware** - Only your mobile! That's what makes it so practical and scalable. Just install the app and feel the power.
+
+**Programming Languages** - Solidity and Javascript.
+
+**Tools** - Flutter, Remix IDE, OneClickDapp, MetaMask.
+
+**Technology** - Ethereum, Matic, Web3.
+
+**The Socialist Guru** -
+
+...
+
+**CoronaMeter** - 
+
+The webapp is backed by a Smart Contract written in Solidity language. It consists of setter and getter functions that gives it the ability to enter new data and read new data. We took care of power levels such that a transaction can only be done from a registered ID which has the power the do so. 
+
+The Smart Contract is hosted on both Ropsten test network and Matic test network. Though the Matic network is much more efficient but the hosting site we used did not support it in a simple way so we used Ropsten for that part.
+
+# Challenges we ran into -
+
+We needed to make sure that only Admin and registered Hospitals will be able to register new patients, so our earlier idea was to iterate through an array of registered hospitals and find if the address is present. This would have become very costly for practical purposes as Ethereum charges you for every step you take (and imagine the steps in going through the array of thousands of hospitals every time). 
+
+We found an efficient alternative as connecting a new Hospital address with a Boolean and marking it as true with the help of "Mapping function". So whenever someone tries to add a new patient we just need to check if their address has been mapped as true; if not then the person gets a message that they are not authorized to do so. We also had the difficulty in connecting the blockchain into flutter and posting and getting location in very less time interval was one of the biggest challenges we faced.
