@@ -60,3 +60,6 @@ The Smart Contract is hosted on both Ropsten test network and Matic test network
 
 # Challenges we ran into -
 
+We needed to make sure that only Admin and registered Hospitals will be able to register new patients, so our earlier idea was to iterate through an array of registered hospitals and find if the address is present. This would have become very costly for practical purposes as Ethereum charges you for every step you take (and imagine the steps in going through the array of thousands of hospitals every time). 
+
+We found an efficient alternative as connecting a new Hospital address with a Boolean and marking it as true with the help of "Mapping function". So whenever someone tries to add a new patient we just need to check if their address has been mapped as true; if not then the person gets a message that they are not authorized to do so. We also had the difficulty in connecting the blockchain into flutter and posting and getting location in very less time interval was one of the biggest challenges we faced.
