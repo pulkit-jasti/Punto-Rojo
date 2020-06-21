@@ -29,14 +29,34 @@ This is a very simple website built on top of etherum technology and utilises th
 
 ![Web interface](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/Web%20interface.png)
 
-Anybody with an Ethereum address can read the data on the web from knowing who the admin is to the individual details of the patients (without directly linking information, of course) like Age and Date of information. This will ensure that there is complete tranparancy in the untampered data that every citizen has the right to know.
+👆 Anybody with an Ethereum address can read the data on the web from knowing who the admin is to the individual details of the patients (without directly linking information, of course) like Age and Date of information. This will ensure that there is complete tranparancy in the untampered data that every citizen has the right to know.
 
 ![Web interface 2](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/web%20interface%202.png)
 
-Coming to the data entry part, there is a top level admin that has the maximum powers from registering with new Hospitals to Registering new Patients. These Hospitals only have the power to add new patient details. If the need be, the smart contract could also be modified to have vice admins who have powers in between the Admin and Hospitals. Sounds like your typical Discord group, doesn't it?
+👆 Coming to the data entry part, there is a top level admin that has the maximum powers from registering with new Hospitals to Registering new Patients. These Hospitals only have the power to add new patient details. If the need be, the smart contract could also be modified to have vice admins who have powers in between the Admin and Hospitals. Sounds like your typical Discord group, doesn't it?
 
 And as we all know the biggest plus point of ethereum based database management is its immutability and the fact that everything gets stored on the chain permanently. Therefore, we'll know who entered a data in CoronaMeter.
 
 
+# How it does these things?
 
+**Hardware** - Only your mobile! That's what makes it so practical and scalable. Just install the app and feel the power.
+
+**Programming Languages** - Solidity and Javascript.
+
+**Tools** - Flutter, Remix IDE, OneClickDapp, MetaMask.
+
+**Technology** - Ethereum, Matic, Web3.
+
+**The Socialist Guru** -
+
+...
+
+**CoronaMeter** - 
+
+The webapp is backed by a Smart Contract written in Solidity language. It consists of setter and getter functions that gives it the ability to enter new data and read new data. We took care of power levels such that a transaction can only be done from a registered ID which has the power the do so. 
+
+The Smart Contract is hosted on both Ropsten test network and Matic test network. Though the Matic network is much more efficient but the hosting site we used did not support it in a simple way so we used Ropsten for that part.
+
+# Challenges we ran into -
 
