@@ -13,7 +13,7 @@ We wanted tackle this problem by building a system that was based on a decentral
 
 # What it does?
 
-**The Socialist Guru* -
+**The Socialist Guru** -
 
 It is a simple and small application resting in your smart phone and only requires a GPS and Mobile data access to work. It runs with abilities : 
 
@@ -21,10 +21,20 @@ It is a simple and small application resting in your smart phone and only requir
 
 2. One can also check for the same situation in any specific location they want to! Just enter the location or pin it on the map and the live data will tell you if the place safe to go or not. This will be especially useful for police and other authorities who are trying to keep a check on social distance in their premises. 
 
-**CoronaMeter* - 
+**CoronaMeter** - 
 
 This is a very simple website built on top of etherum technology and utilises the power of Matic network to improve its capacities and affordability drastically. 
 
 ![Web interface](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/Web%20interface.png)
 
+Anybody with an Ethereum address can read the data on the web from knowing who the admin is to the individual details of the patients (without directly linking information, of course) like Age and Date of information. This will ensure that there is complete tranparancy in the untampered data that every citizen has the right to know.
+
+![Web interface 2](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/web%20interface%202.png)
+
+Coming to the data entry part, there is a top level admin that has the maximum powers from registering with new Hospitals to Registering new Patients. These Hospitals only have the power to add new patient details. If the need be, the smart contract could also be modified to have vice admins who have powers in between the Admin and Hospitals. Sounds like your typical Discord group, doesn't it?
+
+And as we all know the biggest plus point of ethereum based database management is its immutability and the fact that everything gets stored on the chain permanently. Therefore, we'll know who entered a data in CoronaMeter.
+
 Go check out our CoronaMeter Pandemic Data management system on https://oneclickdapp.com/golf-jeep/.
+
+
