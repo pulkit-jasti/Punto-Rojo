@@ -73,6 +73,8 @@ And as we all know the biggest plus point of ethereum based database management 
 
 The webapp is backed by a Smart Contract written in Solidity language. It consists of setter and getter functions that gives it the ability to enter new data and read new data. We took care of power levels such that a transaction can only be done from a registered ID which has the power the do so. 
 
+![Matic explorer website](https://github.com/pulkit-jasti/HackJaipur/blob/master/Images/Matic.png)
+
 The Smart Contract is hosted on both Ropsten test network and Matic test network. Though the Matic network is much more efficient but the hosting site we used did not support it in a simple way so we used Ropsten for that part.
 
 # Challenges we ran into -
