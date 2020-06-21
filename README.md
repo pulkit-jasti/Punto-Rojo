@@ -1,6 +1,8 @@
 # HackJaipur
 Repo for the HackJaipur hackathon project
 
+Go check out our CoronaMeter Pandemic Data management system on https://oneclickdapp.com/golf-jeep/ today!
+
 # Inspiration :
 
 Two pillars of Community Helpers stand strong in controlling the expansion of this heart wrenching Pandemic : Police and Hospitals. 
@@ -35,6 +37,6 @@ Coming to the data entry part, there is a top level admin that has the maximum p
 
 And as we all know the biggest plus point of ethereum based database management is its immutability and the fact that everything gets stored on the chain permanently. Therefore, we'll know who entered a data in CoronaMeter.
 
-Go check out our CoronaMeter Pandemic Data management system on https://oneclickdapp.com/golf-jeep/.
+
 
 
