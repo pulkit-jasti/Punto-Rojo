@@ -25,7 +25,7 @@ It is a simple and small application resting in your smartphone and only require
 
 2. One can also check for the same situation in any specific location they want to! Just enter the location or pin it on the map and the live data will tell you if the place safe to go or not. This will be especially useful for police and other authorities who are trying to keep a check on social distance on their premises. 
 
-![Screenshot of the app](https://github.com/pulkit-jasti/Punto-Rojo/blob/master/Images/pic5ks6n5qsm.png)(https://github.com/pulkit-jasti/Punto-Rojo/blob/master/Images/picge92syep5.png)
+![Screenshot of the app](https://github.com/pulkit-jasti/Punto-Rojo/blob/master/Images/pic5ks6n5qsm.png) ![Screenshot of the app](https://github.com/pulkit-jasti/Punto-Rojo/blob/master/Images/picge92syep5.png)
 
 **CoronaMeter** - 
 
